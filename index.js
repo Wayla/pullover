@@ -87,7 +87,6 @@ Pullover.prototype.pull = function (remote, repo, cb) {
     } 
 
     var dir = path.join(self.repoDir, repo);
-    console.log(dir);
     // TODO: custom pull args
     var ps = spawn('git', [ 'pull', remote ], {
       cwd: dir
